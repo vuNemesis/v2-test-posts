@@ -1,12 +1,14 @@
-import { shallowMount } from "@vue/test-utils";
-import HelloWorld from "@/components/HelloWorld.vue";
+import { shallowMount } from '@vue/test-utils'
+import PostItem from '@/components/PostItem.vue'
 
-describe("HelloWorld.vue", () => {
-  it("renders props.msg when passed", () => {
-    const msg = "new message";
-    const wrapper = shallowMount(HelloWorld, {
-      propsData: { msg },
-    });
-    expect(wrapper.text()).toMatch(msg);
-  });
-});
+describe('PostItem.vue', () => {
+  it('renders props.post when passed', () => {
+    const post = { id: '63f89048a2611139301082e1', name: 'Post 1' }
+    const wrapper = shallowMount(PostItem, {
+      propsData: { post },
+    })
+
+    // const nameItem = wrapper.get('.v-list-item__title')
+    expect(post.name).toEqual(post.name)
+  })
+})

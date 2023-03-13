@@ -8,7 +8,7 @@
         item-height="61"
         v-slot:default="{ item: post }"
       >
-        <PostItem
+        <post-item
           :post="post"
           :selected="selectedPostId === post.id"
           @click.native="selectedPostId = post.id"
@@ -19,7 +19,7 @@
       </v-virtual-scroll>
     </v-row>
 
-    <ConfirmDialog ref="confirm" />
+    <confirm-dialog ref="confirm" />
 
     <v-dialog v-model="showModal" width="500" @click:outside="resetForm">
       <v-card>

@@ -30,7 +30,7 @@
     </v-app-bar>
 
     <v-main>
-      <PostList ref="postList" />
+      <post-list ref="postList" />
     </v-main>
   </v-app>
 </template>

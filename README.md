@@ -1,4 +1,4 @@
-# v2-test-posts (Vue2 + Vuex + Vuetify) [Demo](https://v2-test-posts.vercel.app/)
+# v2-test-posts (Vue2 + Vuex + Vuetify) [Demo](https://v2-test-posts.vercel.app/){:target="_blank"}
 
 ## Project setup
 
